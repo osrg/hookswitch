@@ -1,0 +1,24 @@
+#!/bin/bash
+for i in "$@"
+do
+    case $i in
+	--tcp-ports=*)
+	    export HOOKSWITCH_TCP_PORTS="${i#*=}"
+	    shift
+	    ;;
+	--udp-ports=*)
+	    export HOOKSWITCH_UDP_PORTS="${i#*=}"
+	    shift
+	    ;;
+	--debug)
+	    export HOOKSWITCH_DEBUG=1
+	    shift
+	    ;;
+	*)
+	    export HOOKSWITCH_ZMQ_ADDR="${i#*=}"
+	    ;;
+    esac
+done
+
+# TODO: support python3 ryu-manager
+python2 $(which ryu-manager) hookswitch.cli.of13
