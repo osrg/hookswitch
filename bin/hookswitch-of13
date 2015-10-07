@@ -21,4 +21,4 @@ do
 done
 
 # TODO: support python3 ryu-manager
-python2 $(which ryu-manager) hookswitch.cli.of13
+exec python2 $(which ryu-manager) hookswitch.cli.of13

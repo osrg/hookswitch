@@ -1,2 +1,2 @@
 #!/bin/sh
-python -m hookswitch.cli.example_controller "$@"
+exec python2 -m hookswitch.cli.example_controller "$@"
