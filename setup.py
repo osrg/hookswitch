@@ -2,12 +2,12 @@ from distutils.core import setup
 setup(
     name='hookswitch',
     packages=['hookswitch', 'hookswitch.cli', 'hookswitch.internal'],
-    version='0.0.1',
+    version='0.0.2',
     description='A usermode packet injection library',
     author='Akihiro Suda',
     author_email='suda.akihiro@lab.ntt.co.jp',
     url='https://github.com/osrg/hookswitch',
-    download_url='https://github.com/osrg/hookswitch/tarball/v0.0.1',
+    download_url='https://github.com/osrg/hookswitch/tarball/v0.0.2',
     license='Apache License 2.0',
     scripts=[
         'bin/hookswitch-nfq',
