@@ -4,12 +4,12 @@
 
 ## Possible Recipes
 
-* Fault Injection (Example: [Earthquake](https://github.com/osrg/earthquake))
+* Fault Injection (Example: [Namazu](https://github.com/osrg/namazu))
 * L7-aware firewall (Note that you might not get good performance. However, it's still useful for prototyping.)
 
 and so on..
 
-HookSwitch was originally developed for [Earthquake](https://github.com/osrg/earthquake), but we believe HookSwitch can be also used for other purposes.
+HookSwitch was originally developed for [Namazu](https://github.com/osrg/namazu), but we believe HookSwitch can be also used for other purposes.
 
 ## Supported Backends
 
@@ -70,7 +70,7 @@ HookSwitch <- Controller:
 
 
 ## Related Projects
-* [Earthquake](https://github.com/osrg/earthquake)
+* [Namazu (Earthquake)](https://github.com/osrg/namazu)
 * [HookFS](https://github.com/osrg/hookfs)
 
 ## How to Contribute
